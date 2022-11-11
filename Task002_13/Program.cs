@@ -4,12 +4,10 @@
 // 78 -> 3-цифры нет;
 // 37679 -> 6
 
-int numA = 37679;
-result = 0;
+int result = 0;
+Console.WriteLine("Enter a number: ");
 
-Console.WriteLine("Enter five digit number: ");
-//int numA = Convert.ToInt32(Console.ReadLine());
-
+int numA = Convert.ToInt32(Console.ReadLine());
 if (numA < 100)
 {
     Console.WriteLine("NO THIRD DIGIT");
@@ -17,10 +15,11 @@ if (numA < 100)
 
 else
 {
-    Console.WriteLine($"The third digit is ");
-    result = numA / 100 % 10;
-    Console.WriteLine(result);
 
+        result = numA / 1 % 10;
+    
+    Console.WriteLine(" The third digit is: [result]");
+    Console.Write(result);
 }
 
 
